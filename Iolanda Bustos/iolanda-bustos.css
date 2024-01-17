@@ -1,0 +1,351 @@
+html, body {
+    width: 100%; 
+    height: 100vh;
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FEF9E7 ;
+}
+
+@font-face {
+    font-family: 'Compagnon-Italic';
+    src: url('/Type/compagnon-master/fonts/webfonts/Compagnon-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Compagnon-Light';
+    src: url('/Type/compagnon-master/fonts/webfonts/Compagnon-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Coconat-Regular';
+    src: url('/Type/CLT-Coconat/desktop/Coconat-Regular.otf') format('woff2');
+}
+
+@font-face {
+    font-family: 'VG5000';
+    src: url('/Type/vg5000-master/fonts/webfonts/VG5000-Regular_web.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Space-Grotesk';
+    /* src: url('/Type/SpaceGrotesk-2.0.0/woff2/static/SpaceGrotesk-Medium.woff2'),
+    url('/Type/SpaceGrotesk-2.0.0/woff2/static/SpaceGrotesk-Bold.woff2'), */
+    src: url('/Type/SpaceGrotesk-2.0.0/woff2/static/SpaceGrotesk-Light.woff2');
+}
+
+p {
+    font-family: 'Space-Grotesk', serif;
+    font-variation-settings: 'wght' 100;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+hr {
+    size: 0.5px;
+}
+
+h1 {
+    font-family: 'Compagnon-Italic';
+    font-size: 70px;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Compagnon-Italic';
+    font-size: 30px;
+    font-weight: 100;   
+}
+
+a {
+    color: #3e53a5;
+    text-decoration: none;
+}
+
+/* Navbar Section */
+.navbar {
+    background-color: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    z-index: 1000;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    writing-mode: vertical-rl; 
+    text-orientation: mixed;
+    border: 0.75px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .navbar-text {
+    font-family: 'Space-Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+  .navbar a:hover {
+    background-color: white;
+    color: #83a700;
+    border: 0.75px solid #83a700;
+}
+
+.navbar-mobile {
+    text-align: center;
+}
+
+.navbar-mobile a {
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-top: 0.75px solid black;
+}
+
+.navbar-mobile a:last-child {
+    border-bottom: 0.75px solid black;
+  }
+
+.navbar-text-mobile{
+    font-family: 'Space-Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+@media (min-width: 950px) {
+    .navbar-mobile  {
+    display: none;
+}
+}
+
+@media (max-width: 950px) {
+    .navbar  {
+    display: none;
+}
+.navbar a {
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    writing-mode: sideways-lr; 
+    text-orientation: upright;
+    border: 0.75px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .navbar-text {
+    font-family: 'Space-Grotesk', sans-serif;
+    font-size: 15px;
+  }
+}
+
+/* Header Section */
+.opening-text-div {
+display: grid;
+grid-template-columns: 1fr;
+margin-left: 100px;
+margin-right: 120px;
+margin-top: 50px;
+}
+
+.iolanda-headline {
+    font-family: 'Compagnon-Italic';
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 0.1em;
+    color: #0F52BA;
+}
+
+.iolanda-headline-text {
+    font-family: 'Space-Grotesk', serif;
+    font-variation-settings: 'wght' 100;
+    font-size: 25px;
+    line-height: 1.5em;
+    margin-top: 0.1em;
+    color: #0F52BA;
+}
+
+.interview-credits-text {
+display: grid;
+grid-template-columns: 1fr;
+text-align: center;
+font-family: 'Compagnon-Italic';
+font-size: 80px;
+font-weight: 100;
+margin-top: 0.2em;
+margin-bottom: 0.1em;
+line-height: 1.1em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.gallery-item {
+width: 200px;
+height: auto;
+}
+
+.gallery-item img {
+width: 100%;
+height: auto;
+}
+
+@media (max-width: 950px) {
+    .opening-text-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        }
+        
+        .iolanda-headline {
+            font-family: 'Compagnon-Italic';
+            font-size: 30px;
+            font-weight: 200;
+            margin-bottom: 0.1em;
+            color: #0F52BA;
+        }
+        
+        .iolanda-headline-text {
+            font-family: 'Space-Grotesk', serif;
+            font-variation-settings: 'wght' 100;
+            font-size: 18px;
+            line-height: 1.5em;
+            margin-top: 0.2em;
+            color: #0F52BA;
+        }
+        
+        .interview-credits-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        font-family: 'Compagnon-Italic';
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 0.2em;
+        margin-bottom: 0.1em;
+        line-height: 1.1em;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            justify-items: center;
+        }
+        
+        .gallery-item {
+        width: 300px;
+        height: auto;
+        padding-bottom: 20px;
+        }
+        
+        .gallery-item img {
+        width: 100%;
+        height: auto;
+        }
+}
+
+/* Interview Section */
+.interview-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 120px;
+    gap: 30px;
+}
+
+.interview-question {
+    font-family: 'Space-Grotesk', serif;
+    font-variation-settings: 'wght' 100;
+    font-style: italic;
+    font-size: 18px;
+    color: #0F52BA;
+}
+
+.interview-answer {
+    font-family: 'Space-Grotesk', serif;
+    font-variation-settings: 'wght' 100;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: black;
+}
+
+.end-text {
+    color: #0F52BA;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    .interview-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 10px;
+    }
+    
+    .interview-question {
+        font-family: 'Space-Grotesk', serif;
+        font-variation-settings: 'wght' 100;
+        font-style: italic;
+        font-size: 18px;
+        color: #0F52BA;
+    }
+    
+    .interview-answer {
+        font-family: 'Space-Grotesk', serif;
+        font-variation-settings: 'wght' 100;
+        font-size: 17px;
+        line-height: 1.5em;
+        color: black;
+    }
+    
+    .end-text {
+        color: #0F52BA;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
